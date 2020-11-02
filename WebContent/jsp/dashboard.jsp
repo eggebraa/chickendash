@@ -305,8 +305,8 @@ window.setTimeout(function(){
 <!-- left -->
 <table class="normalTable">
 <tr><th colspan=3>Chicken Run Status</th></tr>
-<tr><td>Temperature:</td><td><%=(status.getRunTemp()<-50?"?":status.getRunTemp() + "&deg;F") %></td><td></td></tr>
-<tr><td>Humidity:</td><td><%=(status.getRunHumid()<-50?"?":status.getRunHumid() + "%") %></td><td></td></tr>
+<tr><td>Temperature:</td><td><%=(status.getRunTemp()<-50?"Unknown":status.getRunTemp() + "&deg;F") %></td><td></td></tr>
+<tr><td>Humidity:</td><td><%=(status.getRunHumid()<-50?"Unknown":status.getRunHumid() + "%") %></td><td></td></tr>
 <tr><td>Outside lights:</td>
 	<td valign=middle>
 		<% if (status.getRunLights().equals(StatusBean.STATUS_OFF)) { %>
