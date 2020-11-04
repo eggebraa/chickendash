@@ -308,7 +308,7 @@ window.setTimeout(function(){
 <tr><td>Temperature:</td><td><%=(status.getRunTemp()<-50?"Unknown":status.getRunTemp() + "&deg;F") %></td><td></td></tr>
 <tr><td>Humidity:</td><td><%=(status.getRunHumid()<-50?"Unknown":status.getRunHumid() + "%") %></td><td></td></tr>
 <tr><td>Outside lights:</td>
-	<td valign=middle>
+	<td valign=middle>  
 		<% if (status.getRunLights().equals(StatusBean.STATUS_OFF)) { %>
 			<img src="../images/LightOff.png" height=25>
 		<% } else if (status.getRunLights().equals(StatusBean.STATUS_ON)) { %>
