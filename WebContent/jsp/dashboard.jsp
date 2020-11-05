@@ -15,7 +15,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Eggebraaten Chicken Dashboard</title>
+<title>Eggebraaten Chicken Dashboard</title> 
 </head>
 <link rel="stylesheet" href="style.css" type="text/css" id="" media="print, projection, screen" />
 
