@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "teggeakscluster-a1f0"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "teggeakscluster-a1f0"
+  template:
+    metadata:
+      labels:
+        app: "teggeakscluster-a1f0"
+    spec:
+      containers:
+        - name: "teggeakscluster-a1f0"
+          image: "teggeregistry.azurecr.io/teggeakscluster"
+          ports:
+          - containerPort: 80
