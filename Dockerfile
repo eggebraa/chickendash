@@ -3,7 +3,6 @@
  MAINTAINER Tom Eggebraaten
 
  WORKDIR /usr/local/tomcat/webapps
- COPY target/*.war .
- RUN mv *.war ROOT.war
- RUN rm -rf ROOT
+ COPY target/chickendash.war .
+ RUN rm -rf chickendash
  CMD ["catalina.sh", "run"]
